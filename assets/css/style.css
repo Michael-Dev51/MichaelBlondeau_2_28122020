@@ -25,6 +25,10 @@ header {
   padding: 2%;
   margin: auto;
 }
+.star{
+  display: flex;
+  margin-top: 1%;
+}
 h1 {
   text-align: justify;
   margin-bottom: 2%;
@@ -44,15 +48,13 @@ form {
   flex-wrap: wrap;
 }
 .liFilters {
-  
   padding: 2%;
   border: blue 1px solid;
-  
+
   justify-content: center;
   align-items: center;
 }
 li span {
-  
 }
 .info {
   width: 90%;
@@ -60,14 +62,14 @@ li span {
   margin-bottom: 4%;
 }
 /*aside les plus populaires*/
-#popular{
-  flex-basis: 1 1 auto;  
+#popular {
+  flex-basis: 1 1 auto;
   flex-flow: column wrap;
   background-color: brown;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.popular-h2{
+.popular-h2 {
   display: flex;
   width: 85%;
   margin: auto;
@@ -75,26 +77,59 @@ li span {
   padding: 0;
   justify-content: space-between;
 }
-.popular-span{
-
+.popular-span {
 }
-.aside-popular{
+.aside-popular {
   display: flex;
-  align-items: center;     
-  
+  align-items: center;
 }
-.popular-insert{
+.popular-insert {
   width: 80%;
   background-color: cornsilk;
   margin: auto;
   margin-bottom: 5%;
   padding: 2%;
 }
-.img-aside{
+.img-aside {
   width: 34%;
-  height: 120px;;
+  height: 120px;
 }
-.aside-fig{
+.aside-fig {
   width: 50%;
   margin-left: 5%;
+}
+#accommodation{
+  flex-flow: column wrap;
+  background-color: yellowgreen;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.accommodation-h2{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 4%;
+  padding: 0;
+}
+.accommodation-insert{
+  width: 80%;
+  background-color: cornsilk;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+.img-accommodation{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+#activity{
+  flex-flow: column wrap;
+  background-color:aqua;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.activity-h2{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 4%;
 }
