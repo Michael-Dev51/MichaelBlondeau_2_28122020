@@ -36,20 +36,65 @@ form {
 #filters {
   width: 90%;
   margin: auto;
-  display: flex;
   flex-wrap: wrap;
 }
 .ulFilters {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .liFilters {
-  width: 60%;
-  display: flex;
+  
+  padding: 2%;
+  border: blue 1px solid;
+  
+  justify-content: center;
+  align-items: center;
+}
+li span {
+  
 }
 .info {
   width: 90%;
   margin-top: 4%;
   margin-bottom: 4%;
+}
+/*aside les plus populaires*/
+#popular{
+  flex-basis: 1 1 auto;  
+  flex-flow: column wrap;
+  background-color: brown;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.popular-h2{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 4%;
+  padding: 0;
+  justify-content: space-between;
+}
+.popular-span{
+
+}
+.aside-popular{
+  display: flex;
+  align-items: center;     
+  
+}
+.popular-insert{
+  width: 80%;
+  background-color: cornsilk;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+.img-aside{
+  width: 34%;
+  height: 120px;;
+}
+.aside-fig{
+  width: 50%;
+  margin-left: 5%;
 }
