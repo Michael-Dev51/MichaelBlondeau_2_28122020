@@ -1,9 +1,7 @@
 body {
-  border: 1px solid darkmagenta;
   width: 100%;
 }
-header {
-}
+
 .logo {
   margin-left: 2%;
 }
@@ -25,7 +23,7 @@ header {
   padding: 2%;
   margin: auto;
 }
-.star{
+.star {
   display: flex;
   margin-top: 1%;
 }
@@ -49,23 +47,21 @@ form {
 }
 .liFilters {
   padding: 2%;
-  border: blue 1px solid;
-
   justify-content: center;
   align-items: center;
-}
-li span {
 }
 .info {
   width: 90%;
   margin-top: 4%;
   margin-bottom: 4%;
 }
-/*aside les plus populaires*/
+.info span {
+  margin-left: 5px;
+}
+/*Aside popular section*/
 #popular {
   flex-basis: 1 1 auto;
   flex-flow: column wrap;
-  background-color: brown;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -85,7 +81,6 @@ li span {
 }
 .popular-insert {
   width: 80%;
-  background-color: cornsilk;
   margin: auto;
   margin-bottom: 5%;
   padding: 2%;
@@ -98,77 +93,76 @@ li span {
   width: 50%;
   margin-left: 5%;
 }
-#accommodation{
+/*Accommodation section*/
+#accommodation {
   flex-flow: column wrap;
-  background-color: yellowgreen;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.accommodation-h2{
+.accommodation-h2 {
   width: 85%;
   margin: auto;
   margin-bottom: 4%;
   padding: 0;
 }
-.accommodation-insert{
+.accommodation-insert {
   width: 80%;
-  background-color: cornsilk;
   margin: auto;
   margin-bottom: 5%;
   padding: 2%;
 }
-.img-accommodation{
+.img-accommodation {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
-#activity{
+/*Activity section*/
+#activity {
   flex-flow: column wrap;
-  background-color:aqua;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.activity-h2{
+.activity-h2 {
   width: 85%;
   margin: auto;
   margin-bottom: 4%;
 }
-.activity-insert{
+.activity-insert {
   width: 80%;
-  background-color: cornsilk;
   margin: auto;
   margin-bottom: 5%;
   padding: 2%;
 }
-.img-activity{  
-    width: 100%;
-    height: 150px; 
-    object-fit: cover;    
+.img-activity {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
-.activity-h3{
+.activity-h3 {
   margin: 20px 0 20px 10px;
 }
-footer{
+/*Footer section*/
+footer {
   flex-flow: column wrap;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-#about{
+#about {
   width: 80%;
   margin: auto;
 }
-#our_accommodations{
+#our_accommodations {
   width: 80%;
   margin: auto;
 }
-#assistance{
+#assistance {
   width: 80%;
   margin: auto;
 }
-.footer_h4{
+.footer_h4 {
   color: black;
   margin-bottom: 4%;
 }
-.footer_li{
+.footer_li {
   margin-bottom: 2%;
 }
