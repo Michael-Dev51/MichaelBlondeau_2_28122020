@@ -133,3 +133,18 @@ li span {
   margin: auto;
   margin-bottom: 4%;
 }
+.activity-insert{
+  width: 80%;
+  background-color: cornsilk;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 2%;
+}
+.img-activity{  
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;    
+}
+.activity-h3{
+  margin: 20px 0 20px 10px;
+}
