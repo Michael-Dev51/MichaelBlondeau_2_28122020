@@ -148,3 +148,27 @@ li span {
 .activity-h3{
   margin: 20px 0 20px 10px;
 }
+footer{
+  flex-flow: column wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#about{
+  width: 80%;
+  margin: auto;
+}
+#our_accommodations{
+  width: 80%;
+  margin: auto;
+}
+#assistance{
+  width: 80%;
+  margin: auto;
+}
+.footer_h4{
+  color: black;
+  margin-bottom: 4%;
+}
+.footer_li{
+  margin-bottom: 2%;
+}
