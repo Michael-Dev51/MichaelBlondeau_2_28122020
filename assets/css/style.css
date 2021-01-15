@@ -13,6 +13,8 @@ a {
 
 }
 .signup {
+  color: #0065FC;
+  font-weight: bold;
   margin-top: 25px;
   margin-right: 20px;
   float: right;  
@@ -25,22 +27,20 @@ a {
 .ulNav {
   display: flex;  
   justify-content: space-around;
+ 
+  padding-bottom: 0.5rem;
 }
 .liNav {
   width: 50%;
   text-align: center;  
-  padding: 0.3rem; 
+  padding: 0.3rem;
+  border-bottom: 2px solid #f2f2f2; 
 }
-.aNav {
-  width: 185px;
-}
-.liNav a {
-  border-bottom: 2px solid #f2f2f2;  
-}
-.liNav a:hover{
+.ulNav li:hover{
   border-bottom: 2px solid blue;
-  padding-bottom: 0.5rem;
-  width: 100%;
+  
+ 
+  
 }
 #search_bar {
   width: 90%;
