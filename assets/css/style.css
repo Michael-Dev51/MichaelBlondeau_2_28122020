@@ -1,71 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*****************************************/
+/**************** GENERAL ****************/
+/*****************************************/
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   font-family: Raleway;
 }
+
+main {
+  margin-top: 20px;
+}
+
+section, aside {
+  padding: 0 20px;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
-.logo {
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/*****************************************/
+/***************** HEADER ****************/
+/*****************************************/
+
+header {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
   margin-left: 20px;
-  margin-top: 10px;
-
 }
-.signup {
+header > a {
   color: #0065FC;
   font-weight: bold;
-  margin-top: 25px;
   margin-right: 20px;
-  float: right;  
+  
+  
 }
-.menu {
-  width: 100%;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+header nav{
+  flex-basis: 100%;
+  margin-top: 20px;
 }
-.ulNav {
+header nav ul {
   display: flex;  
   justify-content: space-around;
- 
-  padding-bottom: 0.5rem;
 }
-.liNav {
-  width: 50%;
+header nav ul li {
+  flex-basis: 50%;
   text-align: center;  
-  padding: 0.3rem;
-  border-bottom: 2px solid #f2f2f2; 
+  padding: 16px 0 ;
+  border-bottom: 3px solid #f2f2f2; 
 }
-.ulNav li:hover{
-  border-bottom: 2px solid blue;
-  
- 
-  
+header nav ul li:hover{
+  border-bottom: 2px solid #0065FC;  
 }
+header nav ul li a:hover {
+  color: #0065FC;
+}
+/****************************************/
+/**************** SEARCH ****************/
+/****************************************/
+
 #search_bar {
-  width: 90%;
-  padding: 2%;
-  margin: auto;
+  flex-basis: 100%; 
 }
-.star {
-  display: flex;
-  
-  color:  #0065FC;
-}
-.emptyStar {
-  display: flex;
-  margin-top: 1%;
-  color:  #f2f2f2 ;
-}
+
 h1 {  
   margin-bottom: 1rem;
   font-size: 1.4em;
   font-weight: bold;
 }
-h2 {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
+
 h3 {
   font-size: 1rem;
   font-weight: bold;
@@ -80,94 +103,117 @@ h4 {
 p {
   margin-bottom: 0.5rem;
 }
-.searchForm {
+
+#search_bar form {
   display: flex;  
-  justify-content: center;   
-  margin-top: 1.4rem; 
-  margin-bottom: 1.4rem; 
-  width: 100%;   
+  justify-content: center;
+  flex-basis: 100%;   
+  margin-top: 40px; 
+  margin-bottom: 40px;    
 }
-.iconSearch{
+
+#search_bar form label {
   background-color: #f2f2f2;
-  border-radius: 1rem 0 0 1rem;
-  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 16px 0 0 16px;
+  padding: 16px;
 
 }
-.searchCity {
+
+#search_bar form input {
   border-left: none;
   border-right: none;
-  border-top:0.14rem solid #f2f2f2;
-  border-bottom:0.14rem solid #f2f2f2;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  padding-left: 10px;
+  font-weight: bold; 
   flex: 1 1 auto;
 }
-.searchButtom {
+
+#search_bar form button {
   background-color: #0065FC;
-  border-radius: 1rem 1rem 1rem 1rem;
-  padding: 1rem 1rem 1rem 1rem; 
+  border: none;
+  border-radius: 16px;
+  padding: 16px; 
   margin-left: -10px;   
 }
-.searchButtom i {
+
+#search_bar form button i {
   color: #fff;
 }
-.searchSubmit {
+
+#search_bar form button span {
   display: none;
 }
+
+/****************************************/
+/*************** FILTERS ****************/
+/****************************************/
+
 #filters {
-  width: 90%;
-  margin: auto;
-  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding-bottom: 40px;  
 }
-.ulFilters {
+#filters ul {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  flex-wrap: wrap;  
 }
-.liFilters {
-  padding-right: 2%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2rem 2rem 2rem 2rem;
-  border: 0.14rem solid #f2f2f2;
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+#filters ul li { 
+  border-radius: 32px;
+  border: 2px solid #f2f2f2;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  text-align: center;  
 }
-.liFilters i {
+#filters ul li:hover {
   background-color: #DEEBFF;
-  border-radius: 50px;
-    padding: 15px;
-    margin-left: -5px;
-    margin-right: 20px;
-    color: #0065FC;
 }
-.info {
-  display:  flex; 
-  width: 90%;
-  margin-top: 2rem;
-  margin-bottom: 4%;
-}
-.spanInfo {
-  
-  padding-left: 10px;
-}
-.info i {
+
+#filters ul li i {
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  margin-right: 8px;
   color: #0065FC;
-  border: 0.14rem solid #DEEBFF;
-  padding: 0.2rem;
-  border-radius:  50%;
-  height: 15px;
-  width: 15px;
-  text-align:  center;  
+  width: 3em;
+  line-height: 3em; 
 }
-/*Aside popular section*/
+
+#filters ul li span {  
+ font-weight: bold;
+ margin-right: 15px;  
+}
+
+#filters div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;   
+}
+
+#filters div p {
+  padding: 10px 0 0 10px;  
+}
+
+#filters div span i {   
+  color: #0065FC;
+  border: 2px solid #DEEBFF;
+  border-radius:  50%;
+  width: 24px;
+  line-height: 24px;  
+  text-align:  center; 
+}
+
+/****************************************/
+/********* Aside popular section ********/
+
+
 #popular {
-  flex-basis: 1 1 auto;
+  flex-basis:100%;
   flex-flow: column wrap;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 40px;
+  padding-bottom: 30px;
   background-color:  #f2f2f2 ;
 }
-.popular-h2 {
+#popular h2 {
   display: flex;
   width: 85%;
   margin: auto;
@@ -175,39 +221,57 @@ p {
   padding: 0;
   justify-content: space-between;
 }
-.asidePopular {
-  display: flex;  
-}
-.popular-insert {
-  width: 80%;
+
+#popular article {  
   background-color: #fff;
   border-radius:  1rem;
-  margin: auto;
-  margin-bottom: 5%;
-  padding: 0.30rem;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 4px;
 }
-.img-aside {
-  width: 34%;
-  height: 120px;
+
+#popular article a figure {
+  display: flex;  
+  flex-basis: 100%;
+  height: 100%;
+}
+
+#popular article a figure div {
+  width:  40%;
+  height: 100%;
+ 
+}
+
+#popular article a figure div img {
+  width: 100%;
+  height: 100%;
   border-radius:  1rem 0 0 1rem;
   object-fit:  cover; 
 }
-.asideFig {
-  width: 50%;
-  display:  flex; 
-  flex-direction:   column; 
-  align-items:  stretch;    
-  margin-left: 5%;
-  margin-top: 0;
-  padding-top: 0.5rem;
+#popular article a figure figcaption {
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+       
+ 
 }
-.asideFig h3 {
+
+#popular ul {
+  display: flex;  
+  color:  #0065FC;
+  margin: auto;
+}
+.emptyStar {
+  display: flex;
+  margin-top: 1%;
+  color:  #f2f2f2 ;
+}
+#popular h3 {
     margin-top: 0;
     padding-top: 0;
 }
-.asideFig ul {
-  display: flex;
-  margin-top: 2rem;   
+
+     
 }
 /*Accommodation section*/
 #accommodation {
