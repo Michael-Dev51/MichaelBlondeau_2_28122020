@@ -204,7 +204,7 @@ p {
 
 /****************************************/
 /********* Aside popular section ********/
-
+/****************************************/
 
 #popular {
   flex-basis:100%;
@@ -237,27 +237,31 @@ p {
 }
 
 #popular article a figure div {
-  width:  40%;
-  height: 100%; 
+  flex-basis: 40%;  
 }
 
 #popular article a figure div img {
   width: 100%;
+  max-width: 100%;
   height: 100%;
   border-radius:  1rem 0 0 1rem;
   object-fit:  cover; 
 }
+
 #popular article a figure figcaption {
+  display: flex;          /*ajout*/
+  flex-direction: column; /*ajout*/
+  justify-content: space-between;  
   width: 60%;
-  height: 100%;
+   
   padding: 10px; 
 }
 
 #popular ul {
   display: flex;  
-  color:  #0065FC;
-  margin: auto;
-}
+  color:  #0065FC;   
+} 
+
 .emptyStar {
   display: flex;
   margin-top: 1%;
@@ -268,19 +272,22 @@ p {
     padding-top: 0;
 }   
 
-/*Accommodation section*/
+/****************************************/
+/********* Accommodation section ********/
+/****************************************/
+
 #accommodation {
   flex-flow: column wrap;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.accommodation-h2 {
+#accommodation h2 {
   width: 85%;
   margin: auto;
   margin-bottom: 4%;
   padding: 0;
 }
-.accommodation-insert {
+#accommodation article {
   width: 80%;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
@@ -288,33 +295,36 @@ p {
   margin-bottom: 5%;
   padding: 0.30rem;
 }
-.img-accommodation {
+#accommodation img {
   width: 100%;
   height: 150px;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
-.accommodationFig {
+#accommodation figcaption {
   display: flex;
   flex-direction: column;
   padding: 0.3rem;
 }
-.accommodationFig ul {
-  display: flex;
-    
+#accommodation figcaption ul {
+  display: flex;    
 }
-/*Activity section*/
+
+/****************************************/
+/*********** Activity section ***********/
+/****************************************/
+
 #activity {
   flex-flow: column wrap;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.activity-h2 {
+#activity h2 {
   width: 85%;
   margin: auto;
   margin-bottom: 4%;
 }
-.activityInsert {
+#activity article {
   width: 80%;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
@@ -323,43 +333,56 @@ p {
   padding: 0.30rem;
 }
 
-.imgActivity {
+#activity img {
   width: 100%;
   height: 150px;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
-.activity-h3 {
+#activity h3 {
   margin: 20px 0 20px 10px;
 }
-/*Footer section*/
+
+/****************************************/
+/************ Footer section ************/
+/****************************************/
+
 footer {
   flex-flow: column wrap;
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #f2f2f2;
 }
+
+footer h4 {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  margin-bottom: 3rem;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}
+
 #about {
   width: 80%;
   margin: auto;
 }
-#our_accommodations {
+
+#ourAccommodations {
   width: 80%;
   margin: auto;
 }
+
 #assistance {
   width: 80%;
   margin: auto;
 }
-.footer_h4 {
-  color: black;
-  margin-bottom: 2rem;
-}
-.footer_li {
-  margin-bottom: 1rem;
-}
-.footerUl {
-  margin-bottom: 3rem;
-}
+
+
+
 
 
