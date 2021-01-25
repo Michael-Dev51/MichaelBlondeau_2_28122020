@@ -14,12 +14,12 @@ body {
 }
 
 main {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 section,
 aside {
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 a {
@@ -28,9 +28,9 @@ a {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 /*****************************************/
@@ -38,7 +38,7 @@ h2 {
 /*****************************************/
 
 header {
-  margin-top: 15px;
+  margin-top: 0.94rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,30 +47,36 @@ header {
 }
 
 header img {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
+
 header > a {
   color: #0065fc;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
+
 header nav {
   flex-basis: 100%;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
+
 header nav ul {
   display: flex;
   justify-content: space-around;
 }
+
 header nav ul li {
   flex-basis: 50%;
   text-align: center;
-  padding: 16px 0;
-  border-bottom: 3px solid #f2f2f2;
+  padding: 1rem 0;
+  border-bottom: 0.19rem solid #f2f2f2;
 }
+
 header li:hover {
-  border-bottom: 2px solid #0065fc;
+  border-bottom: 0.19rem solid #0065fc;
 }
+
 header a:hover {
   color: #0065fc;
 }
@@ -95,11 +101,13 @@ h3 {
   color: black;
   margin-bottom: 0.5rem;
 }
+
 h4 {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 900;
   margin-top: 1.5rem;
 }
+
 p {
   margin-bottom: 0.5rem;
 }
@@ -108,22 +116,22 @@ p {
   display: flex;
   justify-content: center;
   flex-basis: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 #searchBar label {
   background-color: #f2f2f2;
-  border-radius: 16px 0 0 16px;
-  padding: 16px;
+  border-radius: 1rem 0 0 1rem;
+  padding: 1rem;
 }
 
 #searchBar input {
   border-left: none;
   border-right: none;
-  border-top: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
-  padding-left: 10px;
+  border-top: 0.125rem solid #f2f2f2;
+  border-bottom: 0.125rem solid #f2f2f2;
+  padding-left: 0.625rem;
   font-weight: bold;
   flex: 1 1 auto;
 }
@@ -131,9 +139,9 @@ p {
 #searchBar button {
   background-color: #0065fc;
   border: none;
-  border-radius: 16px;
-  padding: 16px;
-  margin-left: -10px;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-left: -0.625rem;
 }
 
 #searchBar button i {
@@ -150,20 +158,23 @@ p {
 
 #filters {
   flex-basis: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
+
 #filters ul {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 #filters li {
-  border-radius: 32px;
-  border: 2px solid #f2f2f2;
-  margin-bottom: 8px;
-  margin-right: 8px;
+  border-radius: 2rem;
+  border: 0.125rem solid #f2f2f2;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
   text-align: center;
 }
+
 #filters li:hover {
   background-color: #deebff;
 }
@@ -171,33 +182,33 @@ p {
 #filters i {
   background-color: #deebff;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 0.5rem;
   color: #0065fc;
-  width: 3em;
-  line-height: 3em;
+  width: 3rem;
+  line-height: 3rem;
 }
 
 #filters li span {
   font-weight: bold;
-  margin-right: 15px;
+  margin-right: 0.94rem;
 }
 
 #filters div {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 1.9rem;
 }
 
 #filters div p {
-  padding: 10px 0 0 10px;
+  padding: 0.625rem 0 0 0.625rem;
 }
 
 #filters div span i {
   color: #0065fc;
-  border: 2px solid #deebff;
+  border: 0.125rem solid #deebff;
   border-radius: 50%;
-  width: 24px;
-  line-height: 24px;
+  width: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -208,13 +219,14 @@ p {
 #popular {
   flex-basis: 100%;
   flex-flow: column wrap;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 2.5rem;
+  padding-bottom: 1.875rem;
   background-color: #f2f2f2;
 }
+
 #popular h2 {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   justify-content: space-between;
   font-weight: 900;
 }
@@ -222,9 +234,9 @@ p {
 #popular article {
   background-color: #fff;
   border-radius: 1rem;
-  height: 125px;
-  margin-bottom: 10px;
-  padding: 4px;
+  height: auto;
+  margin-bottom: 0.625rem;
+  padding: 0.25rem;
 }
 
 #popular figure {
@@ -240,7 +252,7 @@ p {
 #popular img {
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 9rem;
   border-radius: 1rem 0 0 1rem;
   object-fit: cover;
 }
@@ -249,18 +261,16 @@ p {
   display: flex; /*ajout*/
   flex-direction: column; /*ajout*/
   width: 60%;
-  padding: 10px;
+  padding: 0.62rem 1rem 0.62rem 1rem;
 }
 
 #popular ul {
   display: flex;
   color: #0065fc;
-  margin-top: auto;
+  margin-top: auto;   
 }
 
 .emptyStar {
-  display: flex;
-  margin-top: 1%;
   color: #f2f2f2;
 }
 
@@ -270,42 +280,47 @@ p {
 
 #accommodation {
   flex-flow: column wrap;
-  padding-top: 30px;
-  padding-bottom: 5%;
+  padding-top: 1.88rem;
+  padding-bottom: 1.25rem;
 }
+
 #accommodation h2 {
   flex-basis: 100%;
   margin: auto;
-  margin-bottom: 4%;
+  margin-bottom: 1.25rem;
   padding: 0;
 }
+
 #accommodation article {
   flex-basis: 100%;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
   margin: auto;
-  margin-bottom: 5%;
+  margin-bottom: 1.25rem;
   padding: 0.3rem;
 }
+
 #accommodation img {
   width: 100%;
-  height: 125px;
+  height: 8rem;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
+
 #accommodation figcaption {
   display: flex;
   flex-direction: column;
   padding: 0.3rem;
 }
+
 #accommodation ul {
   display: flex;
-  color: #0065fc;
+  color: #0065fc;  
 }
 
 .viewMore {
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 0.93rem;
 }
 
 /****************************************/
@@ -314,21 +329,20 @@ p {
 
 #activity {
   flex-flow: column wrap;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #activity h2 {
   flex-basis: 100%;
   margin: auto;
-  margin-bottom: 4%;
+  margin-bottom: 1.25rem;
 }
 
 #activity article {
-  height: 125px;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
-  margin-bottom: 5%;
+  margin-bottom: 1.25rem;
 }
 
 #activity figure {
@@ -346,20 +360,22 @@ p {
 #activity img {
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 8rem;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
 
 #activity figcaption {
-  display: flex;
+  /*display: flex;
   width: 100%;
-  height: 40%;
+  height: 45%;*/
+  align-items: baseline;
 }
 
 #activity h3 {
   font-weight: bold;
-  padding: 20px 0 5px 15px;
+  margin-top: auto;
+  padding: 1.25rem 0 1.20rem 0.94rem;
 }
 
 /****************************************/
@@ -368,8 +384,9 @@ p {
 
 footer {
   flex-flow: column wrap;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
   background-color: #f2f2f2;
 }
 
@@ -387,16 +404,23 @@ footer li {
 }
 
 #about {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 #ourAccommodations {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 #assistance {
-  width: 80%;
+  width: 100%;
   margin: auto;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  body{
+  background-color:red;/*repère*/
+}
 }
