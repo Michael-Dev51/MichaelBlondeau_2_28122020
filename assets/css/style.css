@@ -253,13 +253,9 @@ p {
 }
 
 #popular ul {
-  position: relative;
-  top: 15px;
-}
-
-#popular ul {
   display: flex;
   color: #0065fc;
+  margin-top: auto;
 }
 
 .emptyStar {
