@@ -37,10 +37,7 @@ h2 {
 /*****************************************/
 
 header {
-  margin-top: 0.94rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-top: 0.94rem; 
   justify-content: space-between;
   align-items: center;
 }
@@ -60,8 +57,7 @@ header nav {
   margin-top: 1.25rem;
 }
 
-header nav ul {
-  display: flex;
+header nav ul {  
   justify-content: space-around;
 }
 
@@ -111,10 +107,8 @@ p {
   margin-bottom: 0.5rem;
 }
 
-#searchBar form {
-  display: flex;
+#searchBar form {  
   justify-content: center;
-
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -160,10 +154,8 @@ p {
   padding-bottom: 2.5rem;
 }
 
-#filters ul {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+#filters ul {  
+  justify-content: flex-start;  
 }
 
 #filters li {
@@ -191,15 +183,8 @@ p {
   font-weight: bold;
   margin-right: 0.94rem;
 }
-/*
-#filters div {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.9rem;
-}
-*/
-#filters p {
-  display: flex;
+
+#filters p {  
   margin-top: 1.5rem;
 }
 
@@ -219,17 +204,13 @@ p {
 /********* Aside popular section ********/
 /****************************************/
 
-#popular {
-  display: flex;
-  flex-basis: 100%;
-  flex-flow: column wrap;
+#popular {  
   padding-top: 2.5rem;
   padding-bottom: 1.875rem;
   background-color: #f2f2f2;
 }
 
-#popular h2 {
-  display: flex;
+#popular h2 {  
   margin-bottom: 1.25rem;
   justify-content: space-between;
   font-weight: 900;
@@ -243,8 +224,7 @@ p {
   padding: 0.25rem;
 }
 
-#popular figure {
-  display: flex;
+#popular figure {  
   flex-basis: 100%;
   height: 100%;
 }
@@ -262,14 +242,11 @@ p {
 }
 
 #popular figcaption {
-  display: flex; /*ajout*/
-  flex-direction: column; /*ajout*/
   width: 60%;
   padding: 0.62rem 1rem 0.62rem 1rem;
 }
 
-#popular ul {
-  display: flex;
+#popular ul {  
   color: #f2f2f2;
   margin-top: auto;
 }
@@ -282,25 +259,18 @@ p {
 /********* Accommodation section ********/
 /****************************************/
 
-#accommodation {
-  display: flex;
-  flex-flow: column wrap;
+#accommodation {  
   padding-top: 1.88rem;
   padding-bottom: 1.25rem;
 }
 
-#accommodation h2 {
-  flex-basis: 100%;
-  margin: auto;
-  margin-bottom: 1.25rem;
-  padding: 0;
+#accommodation h2 {  
+  margin-bottom: 1.25rem; 
 }
 
-#accommodation article {
-  flex-basis: 100%;
+#accommodation article {  
   border-radius: 1rem;
-  box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
-  margin: auto;
+  box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2; 
   margin-bottom: 1.25rem;
   padding: 0.3rem;
 }
@@ -312,14 +282,11 @@ p {
   object-fit: cover;
 }
 
-#accommodation figcaption {
-  display: flex;
-  flex-direction: column;
+#accommodation figcaption { 
   padding: 0.3rem;
 }
 
-#accommodation ul {
-  display: flex;
+#accommodation ul {  
   color: #f2f2f2;
 }
 
@@ -331,15 +298,12 @@ p {
 /*********** Activity section ***********/
 /****************************************/
 
-#activity {
-  display: flex;
-  flex-flow: column wrap;
+#activity {  
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-#activity h2 {
-  flex-basis: 100%;
+#activity h2 { 
   margin-bottom: 1.25rem;
 }
 
@@ -349,16 +313,8 @@ p {
   margin-bottom: 1.25rem;
 }
 
-#activity figure {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+#activity figure {   
   height: 100%;
-}
-
-#activity div {
-  flex-basis: 100%;
-  height: 55%;
 }
 
 #activity img {
@@ -369,10 +325,7 @@ p {
   object-fit: cover;
 }
 
-#activity figcaption {
-  /*display: flex;
-  width: 100%;
-  height: 45%;*/
+#activity figcaption {  
   align-items: baseline;
 }
 
@@ -386,9 +339,7 @@ p {
 /************ Footer section ************/
 /****************************************/
 
-footer {
-  display: flex;
-  flex-flow: column wrap;
+footer { 
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -398,12 +349,6 @@ footer {
 footer h4 {
   color: black;
   margin-bottom: 1.5rem;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
 }
 
 footer li {
