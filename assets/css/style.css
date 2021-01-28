@@ -9,7 +9,6 @@
 }
 
 body {
-  width: 100%;
   font-family: Raleway, sans-serif;
 }
 
@@ -179,7 +178,7 @@ p {
   background-color: #deebff;
 }
 
-#filters i {
+#filters ul li i {
   background-color: #deebff;
   border-radius: 50%;
   margin-right: 0.5rem;
@@ -192,24 +191,28 @@ p {
   font-weight: bold;
   margin-right: 0.94rem;
 }
-
+/*
 #filters div {
   display: flex;
   flex-direction: row;
   margin-top: 1.9rem;
 }
-
-#filters div p {
-  padding: 0.625rem 0 0 0.625rem;
+*/
+#filters p {  
+  display: flex;
+  margin-top: 1.5rem;  
 }
 
-#filters div span i {
+#filters p i {
   color: #0065fc;
   border: 0.125rem solid #deebff;
   border-radius: 50%;
-  width: 1.5rem;
+  width: 2rem;
+  height: 2rem;
   line-height: 1.5rem;
   text-align: center;
+  flex: 0 0 2rem;
+  margin-right: 1rem;
 }
 
 /****************************************/
@@ -217,6 +220,7 @@ p {
 /****************************************/
 
 #popular {
+  display: flex;
   flex-basis: 100%;
   flex-flow: column wrap;
   padding-top: 2.5rem;
@@ -266,12 +270,12 @@ p {
 
 #popular ul {
   display: flex;
-  color: #0065fc;
+  color: #f2f2f2;
   margin-top: auto;   
 }
 
-.emptyStar {
-  color: #f2f2f2;
+.active {
+  color: #0065fc;
 }
 
 /****************************************/
@@ -315,12 +319,11 @@ p {
 
 #accommodation ul {
   display: flex;
-  color: #0065fc;  
+  color: #f2f2f2;  
 }
 
-.viewMore {
+#accommodation > a {
   font-weight: bold;
-  padding-top: 0.93rem;
 }
 
 /****************************************/
