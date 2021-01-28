@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 /*****************************************/
 /**************** GENERAL ****************/
@@ -114,7 +114,7 @@ p {
 #searchBar form {
   display: flex;
   justify-content: center;
-  flex-basis: 100%;
+
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -198,9 +198,9 @@ p {
   margin-top: 1.9rem;
 }
 */
-#filters p {  
+#filters p {
   display: flex;
-  margin-top: 1.5rem;  
+  margin-top: 1.5rem;
 }
 
 #filters p i {
@@ -271,7 +271,7 @@ p {
 #popular ul {
   display: flex;
   color: #f2f2f2;
-  margin-top: auto;   
+  margin-top: auto;
 }
 
 .active {
@@ -283,6 +283,7 @@ p {
 /****************************************/
 
 #accommodation {
+  display: flex;
   flex-flow: column wrap;
   padding-top: 1.88rem;
   padding-bottom: 1.25rem;
@@ -319,7 +320,7 @@ p {
 
 #accommodation ul {
   display: flex;
-  color: #f2f2f2;  
+  color: #f2f2f2;
 }
 
 #accommodation > a {
@@ -331,6 +332,7 @@ p {
 /****************************************/
 
 #activity {
+  display: flex;
   flex-flow: column wrap;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -338,7 +340,6 @@ p {
 
 #activity h2 {
   flex-basis: 100%;
-  margin: auto;
   margin-bottom: 1.25rem;
 }
 
@@ -378,7 +379,7 @@ p {
 #activity h3 {
   font-weight: bold;
   margin-top: auto;
-  padding: 1.25rem 0 1.20rem 0.94rem;
+  padding: 1.25rem 0 1.2rem 0.94rem;
 }
 
 /****************************************/
@@ -386,6 +387,7 @@ p {
 /****************************************/
 
 footer {
+  display: flex;
   flex-flow: column wrap;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -404,26 +406,4 @@ footer ul {
 
 footer li {
   margin-bottom: 1rem;
-}
-
-#about {
-  width: 100%;
-  margin: auto;
-}
-
-#ourAccommodations {
-  width: 100%;
-  margin: auto;
-}
-
-#assistance {
-  width: 100%;
-  margin: auto;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-
-  body{
-  background-color:red;/*repère*/
-}
 }
