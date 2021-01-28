@@ -401,9 +401,12 @@ footer h4 {
 }
 
 footer ul {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
 }
 
 footer li {
+  flex-basis: 100%;
   margin-bottom: 1rem;
 }
