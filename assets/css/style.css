@@ -29,7 +29,28 @@ a {
 h2 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.35rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.active, #popular ul, #accommodation ul {
+  color: #0065fc;
 }
 
 /*****************************************/
@@ -80,31 +101,10 @@ header a:hover {
 /**************** SEARCH ****************/
 /****************************************/
 
-#searchBar {
-  flex-basis: 100%;
-}
-
-h1 {
+#searchBar h1 {
   margin-bottom: 1rem;
   font-size: 1.4em;
   font-weight: bold;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 0.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-  font-weight: 900;
-  margin-top: 1.5rem;
-}
-
-p {
-  margin-bottom: 0.5rem;
 }
 
 #searchBar form {  
@@ -186,18 +186,20 @@ p {
 
 #filters p {  
   margin-top: 1.5rem;
+  align-items: baseline;
+  line-height: 1.4rem;  
 }
 
 #filters p i {
   color: #0065fc;
-  border: 0.125rem solid #deebff;
+  border: 0.125rem solid #f2f2f2;
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  line-height: 1.5rem;
+  width: 2rem;  
+  height:2rem;
+  line-height: 1.7rem;
   text-align: center;
   flex: 0 0 2rem;
-  margin-right: 1rem;
+  margin-right: 0.8rem;  
 }
 
 /****************************************/
@@ -210,10 +212,8 @@ p {
   background-color: #f2f2f2;
 }
 
-#popular h2 {  
-  margin-bottom: 1.25rem;
-  justify-content: space-between;
-  font-weight: 900;
+#popular h2 { 
+  justify-content: space-between;  
 }
 
 #popular article {
@@ -251,10 +251,6 @@ p {
   margin-top: auto;
 }
 
-.active {
-  color: #0065fc;
-}
-
 /****************************************/
 /********* Accommodation section ********/
 /****************************************/
@@ -262,10 +258,6 @@ p {
 #accommodation {  
   padding-top: 1.88rem;
   padding-bottom: 1.25rem;
-}
-
-#accommodation h2 {  
-  margin-bottom: 1.25rem; 
 }
 
 #accommodation article {  
@@ -303,10 +295,6 @@ p {
   padding-bottom: 1rem;
 }
 
-#activity h2 { 
-  margin-bottom: 1.25rem;
-}
-
 #activity article {
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.65rem 0.5rem #f2f2f2;
@@ -329,9 +317,7 @@ p {
   align-items: baseline;
 }
 
-#activity h3 {
-  font-weight: bold;
-  margin-top: auto;
+#activity h3 { 
   padding: 1.25rem 0 1.2rem 0.94rem;
 }
 
@@ -351,7 +337,7 @@ footer h4 {
   margin-bottom: 1.5rem;
 }
 
-footer li {
+footer ul li {
   flex-basis: 100%;
   margin-bottom: 1rem;
 }
