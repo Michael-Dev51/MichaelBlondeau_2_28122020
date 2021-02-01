@@ -224,7 +224,6 @@ header ul li a:hover {
 }
 
 #popular figure {  
-  flex-basis: 100%;
   height: 100%;
 }
 
