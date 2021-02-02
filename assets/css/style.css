@@ -74,6 +74,10 @@ header nav {
   margin-top: 20px;
 }
 
+header nav ul li a{ 
+  padding: 2px 50px 18px 50px;
+}
+
 header nav ul {  
   justify-content: space-around;
 }
@@ -150,7 +154,6 @@ header ul li a:hover {
 /****************************************/
 
 #filters {
-  flex-basis: 100%;
   padding-top: 0;  
 }
 
@@ -237,6 +240,7 @@ header ul li a:hover {
   height: 144px;
   border-radius: 16px 0 0 16px;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 #popular figcaption {
@@ -263,7 +267,7 @@ header ul li a:hover {
 }
 
 #accommodation img {
-  width: 100%;
+  flex-basis: auto;
   height: 128px;
   border-radius: 16px 16px 0 0;
   object-fit: cover;
