@@ -111,8 +111,7 @@ header nav ul li:hover a {
   font-weight: bold;
 }
 
-#searchBar form {  
-  justify-content: center;
+#searchBar form {   
   margin-top: 40px;  
 }
 
@@ -353,4 +352,71 @@ footer h4 {
 footer ul li {
   flex-basis: 100%;
   margin-bottom: 16px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------Media query----------------------------------------------------------------------*/
+
+@media all and (min-width: 578px) and (max-width: 768px)
+{
+#searchBar input {
+  flex: none;
+}
+
+#accommodation {
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*width: 100%;*/
+  justify-content: space-around;
+}
+
+#accommodation article {
+  flex-basis: 45%;    
+}
+
+#accommodation h2, #activity h2 {    
+  flex-basis: 100%;
+}
+
+.bold {
+  flex-basis: 100%;
+}
+
+#activity {
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
+.leftActivity{
+  width: 45%;
+}
+
+.leftArticle {
+  width: 100%;
+  min-height: 434px;
+}
+
+.rightActivity{
+  width: 45%;
+  justify-content: space-between;
+}
+
+.leftArticle img {
+  min-height: 365px;
+}
+
+footer {
+  justify-content: center;
+}
+
+footer div {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+  
+
+    
 }
