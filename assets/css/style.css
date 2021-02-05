@@ -471,4 +471,26 @@ footer div {
 }
 
 /*********** screen > 992px < 1200px **********/
+
+@media screen and (min-width: 992px){
+
+  #filters ul {
+    justify-content: space-around;
+  }
+
+  #popular {
+    justify-content: center;
+  }
+  #popular article {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+    
+  }
+
+  #accommodation article {
+    flex-basis: 30%;
+  }
+}
+
 }
