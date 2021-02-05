@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 /*****************************************/
 /**************** GENERAL ****************/
@@ -54,7 +54,7 @@ figcaption ul li .active {
 /*****************************************/
 
 header {
-  margin-top: 15px; 
+  margin-top: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -78,18 +78,18 @@ header nav {
   margin-top: 15px;
 }
 
-header nav ul li a{ 
-  display: block;  
+header nav ul li a {
+  display: block;
   padding: 15px 0;
-  text-align: center;  
+  text-align: center;
 }
 
-header nav ul {  
+header nav ul {
   justify-content: space-around;
 }
 
 header nav ul li {
-  flex-basis: 50%; 
+  flex-basis: 50%;
   border-bottom: 3px solid #f2f2f2;
 }
 
@@ -97,7 +97,7 @@ header nav ul li:hover {
   border-bottom: 3px solid #0065fc;
 }
 
-header nav ul li:hover a { 
+header nav ul li:hover a {
   color: #0065fc;
 }
 
@@ -111,8 +111,8 @@ header nav ul li:hover a {
   font-weight: bold;
 }
 
-#searchBar form {   
-  margin-top: 40px;  
+#searchBar form {
+  margin-top: 40px;
 }
 
 #searchBar label {
@@ -128,7 +128,7 @@ header nav ul li:hover a {
   border-bottom: 2px solid #f2f2f2;
   padding-left: 10px;
   font-weight: bold;
-  flex: 1 1 auto; 
+  flex: 1 1 auto;
   font-size: 1rem;
 }
 
@@ -161,11 +161,11 @@ header nav ul li:hover a {
 /****************************************/
 
 #filters {
-  padding-top: 0;  
+  padding-top: 0;
 }
 
-#filters ul {  
-  justify-content: flex-start;  
+#filters ul {
+  justify-content: flex-start;
 }
 
 #filters li {
@@ -194,33 +194,33 @@ header nav ul li:hover a {
   margin-right: 15px;
 }
 
-#filters p {  
+#filters p {
   margin-top: 24px;
   align-items: baseline;
-  line-height: 22px;  
+  line-height: 22px;
 }
 
 #filters p i {
   color: #0065fc;
   border: 2px solid #f2f2f2;
-  border-radius: 50%; 
+  border-radius: 50%;
   min-width: 28px;
-  min-height: 28px;  
+  min-height: 28px;
   align-items: center;
-  justify-content: center;  
-  margin-right: 12px;  
+  justify-content: center;
+  margin-right: 12px;
 }
 
 /****************************************/
 /********* Aside popular section ********/
 /****************************************/
 
-#popular {  
+#popular {
   background-color: #f2f2f2;
 }
 
-#popular h2 { 
-  justify-content: space-between;  
+#popular h2 {
+  justify-content: space-between;
 }
 
 #popular article {
@@ -232,7 +232,7 @@ header nav ul li:hover a {
   padding: 4px;
 }
 
-#popular figure {  
+#popular figure {
   height: 100%;
 }
 
@@ -254,7 +254,7 @@ header nav ul li:hover a {
   padding: 10px 16px 10px 16px;
 }
 
-#popular ul {  
+#popular ul {
   color: #f2f2f2;
   margin-top: auto;
 }
@@ -263,11 +263,9 @@ header nav ul li:hover a {
 /********* Accommodation section ********/
 /****************************************/
 
-
-
-#accommodation article {  
+#accommodation article {
   border-radius: 16px;
-  box-shadow: 1px 1px 6px 2px #f2f2f2; 
+  box-shadow: 1px 1px 6px 2px #f2f2f2;
   margin-bottom: 1.25rem;
   padding: 0.3rem;
 }
@@ -279,12 +277,12 @@ header nav ul li:hover a {
   object-fit: cover;
 }
 
-#accommodation figcaption { 
+#accommodation figcaption {
   width: 100%;
   padding: 5px;
 }
 
-#accommodation ul {  
+#accommodation ul {
   color: #f2f2f2;
 }
 
@@ -297,7 +295,7 @@ section .bold {
 /*********** Activity section ***********/
 /****************************************/
 
-#activity {  
+#activity {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -308,7 +306,7 @@ section .bold {
   margin-bottom: 20px;
 }
 
-#activity figure {   
+#activity figure {
   height: 100%;
 }
 
@@ -320,8 +318,8 @@ section .bold {
   object-fit: cover;
 }
 
-#activity figcaption { 
-  width: 100%; 
+#activity figcaption {
+  width: 100%;
   align-items: baseline;
 }
 
@@ -329,7 +327,7 @@ section .bold {
   width: 100%;
 }
 
-#activity h3 { 
+#activity h3 {
   padding: 20px 0 19px 15px;
 }
 
@@ -337,11 +335,15 @@ section .bold {
 /************ Footer section ************/
 /****************************************/
 
-footer { 
+footer {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
   background-color: #f2f2f2;
+}
+
+footer div {
+  flex-basis: 100%;
 }
 
 footer h4 {
@@ -357,140 +359,181 @@ footer ul li {
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------Media query----------------------------------------------------------------------*/
 
-@media screen and (min-width: 578px)
-{
-#searchBar input {
-  flex: none;
-}
-
-#accommodation {
-  flex-direction: row;
-  flex-wrap: wrap;
-  /*width: 100%;*/
-  justify-content: space-around;
-}
-
-#accommodation article {
-  flex-basis: 45%;    
-}
-
-#accommodation h2, #activity h2 {    
-  flex-basis: 100%;
-}
-
-.bold {
-  flex-basis: 100%;
-}
-
-#activity {
-  flex-direction: row;
-  justify-content: space-around;
-}
-  
-.leftActivity{
-  width: 45%;
-}
-
-.leftArticle {
-  width: 100%;
-  min-height: 434px;
-}
-
-.rightActivity{
-  width: 45%;
-  justify-content: space-between;
-}
-
-.leftArticle img {
-  min-height: 365px;
-}
-
-footer {
-  justify-content: center;
-}
-
-footer div {
-  width: 100%;
-  text-align: center;
-}
-
-/*********** screen > 768px < 992px **********/
-
-@media screen and (min-width: 768px)
-{
-  header > a {
-    font-size: 1.4rem;
+@media screen and (min-width: 578px) {
+  #searchBar input {
+    flex: none;
   }
 
-  header > a:hover {
-    font-size: 1.5rem;
-  }  
-  
-  header nav ul li a{ 
-    font-size: 1.4rem;  
-  }
-
-  header img {
-    width: 145px;
-    height: auto;
-  }
-
-  #searchBar h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-
-  }
-
-  h4{
-
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  p i{
-    font-size: 1.1rem;
-  }
-
-  #filters p i {
-    min-width: 30px;
-    min-height: 30px;
-  }
-
-  #filters ul li i {
-    width: 50px;
-    line-height: 50px;
-  }   
-}
-
-/*********** screen > 992px < 1200px **********/
-
-@media screen and (min-width: 992px){
-
-  #filters ul {
+  #accommodation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*width: 100%;*/
     justify-content: space-around;
   }
 
-  #popular {
+  #accommodation article {
+    flex-basis: 45%;
+  }
+
+  #accommodation h2,
+  #activity h2 {
+    flex-basis: 100%;
+  }
+
+  .bold {
+    flex-basis: 100%;
+  }
+
+  #activity {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .leftActivity {
+    width: 45%;
+  }
+
+  .leftArticle {
+    width: 100%;
+    min-height: 434px;
+  }
+
+  .rightActivity {
+    width: 45%;
+    justify-content: space-between;
+  }
+
+  .leftArticle img {
+    min-height: 365px;
+  }
+
+  footer {
     justify-content: center;
   }
-  #popular article {
-    width: 75%;
-    margin: auto;
-    margin-bottom: 15px;
-    
+
+  footer div {
+    width: 100%;
+    text-align: center;
   }
 
-  #accommodation article {
-    flex-basis: 30%;
-  }
-}
+  /*********** screen > 768px < 992px **********/
 
+  @media screen and (min-width: 768px) {
+    header > a {
+      font-size: 1.4rem;
+    }
+
+    header > a:hover {
+      font-size: 1.5rem;
+    }
+
+    header nav ul li a {
+      font-size: 1.4rem;
+    }
+
+    header img {
+      width: 145px;
+      height: auto;
+    }
+
+    #searchBar h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+    }
+
+    h4 {
+      font-size: 1.55rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    p i {
+      font-size: 1.1rem;
+    }
+
+    section .bold {
+      font-size: 1.2rem;
+    }
+
+    #filters p i {
+      min-width: 30px;
+      min-height: 30px;
+    }
+
+    #filters ul li i {
+      width: 55px;
+      line-height: 55px;
+    }
+
+    #filters ul li .fas {
+      font-size: 1.3rem;
+    }
+
+    footer div ul li a {
+      font-size: 1.1rem;
+    }
+  }
+
+  /*********** screen > 992px < 1200px **********/
+
+  @media screen and (min-width: 992px) {
+    #searchBar form label {
+      width: 50px;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    #searchBar form label .fas {
+      font-size: 1.3rem;
+    }
+
+    #searchBar input {
+      flex-basis: 280px;
+    }
+
+    #searchBar button .fas {
+      font-size: 1.3rem;
+    }
+
+    #filters ul {
+      justify-content: space-around;
+    }
+
+    #popular {
+      justify-content: center;
+    }
+
+    #popular article {
+      width: 75%;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    #accommodation article {
+      flex-basis: 30%;
+    }
+
+    footer {
+      justify-content: space-between;
+    }
+
+    footer div {
+      flex-basis: 25%;
+      text-align: justify;
+      padding-left: 60px;
+    }
+
+    footer div ul li a {
+      font-size: 1.2rem;
+    }
+  }
 }
