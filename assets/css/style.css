@@ -357,7 +357,7 @@ footer ul li {
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------Media query----------------------------------------------------------------------*/
 
-@media all and (min-width: 578px) and (max-width: 768px)
+@media screen and (min-width: 578px)
 {
 #searchBar input {
   flex: none;
@@ -414,9 +414,61 @@ footer div {
   text-align: center;
 }
 
+/*********** screen > 768px < 992px **********/
 
+@media screen and (min-width: 768px)
+{
+  header > a {
+    font-size: 1.4rem;
+  }
 
+  header > a:hover {
+    font-size: 1.5rem;
+  }  
   
+  header nav ul li a{ 
+    font-size: 1.4rem;  
+  }
 
-    
+  header img {
+    width: 145px;
+    height: auto;
+  }
+
+  #searchBar h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+
+  }
+
+  h4{
+
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  p i{
+    font-size: 1.1rem;
+  }
+
+  #filters p i {
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  #filters ul li i {
+    width: 50px;
+    line-height: 50px;
+  }   
+}
+
+/*********** screen > 992px < 1200px **********/
 }
