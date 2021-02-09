@@ -387,48 +387,52 @@ footer ul li {
   #activity {
     flex-direction: row;
     justify-content: space-around;
-  }  
+  }
 
-  #activity .col-1 article, #activity .col-3 article {
+  #activity .col-1 article,
+  #activity .col-3 article {
     flex-basis: 100%;
   }
-  #activity div .articleTop {
-    height: 60%;
-    margin-bottom: 50px;
-  }
-  #activity div .articleBottom {
-    height:40%;
-  }
 
-  #activity .col-1 img {
+  #activity .col-1 img,
+  #activity .col-3 img {
     min-height: 100%;
   }
- 
-  .col-1, .col-3 {
-    flex-basis:45%; 
-         
-  }
-  #activity .col-1 article figure div, #activity .col-3 article figure div {
-    flex-basis: 85%;
+
+  .col-1,
+  .col-3 {
+    flex-basis: 45%;
   }
 
-  #activity .col-1 article figure figcaption {
-    flex-basis: 15%;
-  }
-  #activity .col-2 article figure div, #activity .col-4 article figure div {
-    flex-basis: 85%;
-  }
-
-  #activity .col-2 article figure figcaption {
-    flex-basis: 15%;
+  #activity .col-1 article figure div,
+  #activity .col-3 article figure div,
+  #activity .articleTop figure div,
+  #activity .articleBottom figure div {
+    flex-basis: 100%;
   }
 
-  .col-2,.col-4 {
+  #activity .articleTop {
+    /*height: 50%;*/
+    flex-basis: 50%;
+  }
+
+  #activity .articleTop img,
+  #activity .articleBottom img {
+    min-height: 100%;
+  }
+
+  #activity .articleBottom {
+    flex-basis: 35%;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4 {
     width: 45%;
     justify-content: space-between;
     height: 460px;
   }
- 
 
   footer {
     justify-content: center;
@@ -442,13 +446,18 @@ footer ul li {
   /*********** screen > 768px < 992px **********/
 
   @media screen and (min-width: 768px) {
-       
     footer div {
       flex-basis: 32%;
       padding-right: 25px;
-      text-align:left;            
-    }     
-    
+      text-align: left;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+      height: 600px;
+    }
   }
 
   /*********** screen > 992px < 1200px **********/
@@ -486,6 +495,11 @@ footer ul li {
       flex-basis: 30%;
     }
 
-    
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+      height: 700px;
+    }
   }
 }
