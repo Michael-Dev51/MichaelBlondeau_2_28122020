@@ -507,5 +507,83 @@ footer ul li {
 
   @media screen and (min-width: 1200px) {
     
+    header {
+      margin-top: 30px;
+    }
+
+    header img {
+      margin-right: auto;
+      margin-top: 10px;
+    }
+
+    header nav {
+      flex-basis: 25%; 
+      margin-top: 0;         
+    }
+
+    header nav ul {
+      margin-top: -30px;      
+    }
+
+    header nav ul li {
+      border-bottom: none;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    header nav ul li:hover {
+      border-bottom:none;
+      border-top: 3px solid #0065FC;
+      padding-top: 27px;
+      display: inline;
+    }
+
+    header nav ul li a {
+     display: inline;     
+    }
+
+    header nav ul li :hover a {      
+      padding-top: 28px;
+  }
+
+    header > a {
+      order: 1;                
+    }
+
+    header > a:hover {
+      font-size: 1rem;
+      border-top: 3px solid #0065FC;
+      padding-top: 28px; 
+      margin-top:-30px;    
+    }
+
+    #searchBar span {
+      display: initial;
+      color: #ffffff;
+    }
+
+    #searchBar button i {
+      display: none;
+    }
+
+    .desktop {
+      display: flex;
+      justify-content: center;
+    }
+
+    #popular {
+      flex-basis: 30%;
+      border-radius: 16px;
+      order: 1;      
+    }
+
+    #accommodation {
+      flex-basis: 60%;
+      border-radius: 16px;
+      background-color: #f2f2f2;
+    }
+
+    
+
   }
 }
