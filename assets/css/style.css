@@ -55,7 +55,7 @@ figcaption ul li .active {
 /*****************************************/
 
 header {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   justify-content: space-between;
   align-items: center;
 }
@@ -509,10 +509,6 @@ footer ul li {
 
   @media screen and (min-width: 1200px) {
     
-    header {
-      margin-top: 30px;
-    }
-
     header img {
       margin-right: auto;
       margin-top: 10px;
@@ -524,7 +520,7 @@ footer ul li {
     }
 
     header nav ul {
-      margin-top: -30px;      
+      margin-top: auto;      
     }
 
     header nav ul li {
@@ -551,14 +547,15 @@ footer ul li {
     header > a {
       order: 1; 
       flex-basis: 10%;
-      text-align: center;               
+      text-align: center;
+      padding-top: 30px;               
     }
 
     header > a:hover {
       font-size: 1rem;
       border-top: 3px solid #0065FC;
       padding-top: 27px; 
-      margin-top:-30px;    
+        
     }
 
     #searchBar span {
