@@ -287,6 +287,7 @@ header nav ul li:hover a {
 #accommodation img {
   flex-basis: auto;
   height: 128px;
+  max-width: 100%;
   border-radius: 16px 16px 0 0;
   object-fit: cover;
 }
@@ -420,26 +421,26 @@ footer ul li {
 
   #activity .col-1 article figure div,
   #activity .col-3 article figure div,
-  #activity .articleTop figure div,
-  #activity .articleBottom figure div {
+  #activity .articleBig figure div,
+  #activity .articleSmall figure div {
     flex-basis: 100%;
   }
 
-  #activity .articleTop {
+  #activity .articleBig {
     /*height: 50%;*/
     flex-basis: 50%;
   }
 
-  #activity .articleTop img {
+  #activity .articleBig img {
     min-height: 100%;
   }
 
-  #activity .articleBottom img {
+  #activity .articleSmall img {
     height: 94px;
     vertical-align: bottom;
   }
 
-  #activity .articleBottom {
+  #activity .articleSmall {
     flex-basis: 35%;
   }
 
@@ -461,7 +462,7 @@ footer ul li {
     text-align: center;
   }
 
-  /*********** screen > 768px < 992px **********/
+  /*********** screen sup 768px inf 992px **********/
 
   @media screen and (min-width: 768px) {
     footer div div {
@@ -470,7 +471,7 @@ footer ul li {
       text-align: left;
     }
 
-    #activity .articleBottom img {
+    #activity .articleSmall img {
       height: 143px;
       vertical-align: bottom;
     }
@@ -483,7 +484,7 @@ footer ul li {
     }
   }
 
-  /*********** screen > 992px < 1200px **********/
+  /*********** screen sup 992px  inf 1200px **********/
 
   @media screen and (min-width: 992px) {
     #searchBar form label {
@@ -518,7 +519,7 @@ footer ul li {
       flex-basis: 30%;
     }
 
-    #activity .articleBottom img {
+    #activity .articleSmall img {
       height: 179px;
       vertical-align: bottom;
     }
@@ -531,7 +532,7 @@ footer ul li {
     }
   }
 
- /*********** screen > 1200px **********/
+ /*********** screen sup 1200px **********/
 
   @media screen and (min-width: 1200px) {
     
@@ -617,7 +618,7 @@ footer ul li {
     }
 
     #popular {
-      flex-basis: 32%;
+      flex-basis: 30%;
       border-radius: 16px;
       order: 1;      
     }
@@ -627,7 +628,7 @@ footer ul li {
     }
 
     #accommodation {
-      flex-basis: 63%;
+      flex-basis: 65%;
       border-radius: 16px;
       background-color: #f2f2f2;
       justify-content: space-between;      
@@ -636,12 +637,19 @@ footer ul li {
     #accommodation > h2 {
       margin-bottom: 0;
     }
+
     #accommodation article {
       width: 100%;
       margin-top: 0;
+      flex-basis: 32%;
+      height: 210px;      
     }
 
-    #activity .articleBottom img {
+    #activity {
+      justify-content: space-between;
+    }
+
+    #activity .articleSmall img {
       height: 91px;
       vertical-align: bottom;
     }
@@ -649,7 +657,18 @@ footer ul li {
     #activity .col-1,#activity .col-2,#activity .col-3,#activity .col-4 {
       flex-basis: 23%; 
       height: 450px;     
-    }   
+    }
+    
+    #activity .col-4 .articleSmall {
+      flex-basis: 40%;
+    }
 
+    #activity .col-4 .articleSmall img {
+      height: 114px;
+    }
+
+    #activity .col-4 .articleBig {
+      flex-basis: 45%;
+    }
   }
 } 
