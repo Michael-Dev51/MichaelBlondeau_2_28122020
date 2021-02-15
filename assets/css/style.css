@@ -144,6 +144,9 @@ header nav ul li:hover a {
 #searchBar button {
   background-color: #0065fc;
   border: none;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
   border-radius: 0 16px 16px 0;
   padding: 16px;
   margin-left: -10px;
