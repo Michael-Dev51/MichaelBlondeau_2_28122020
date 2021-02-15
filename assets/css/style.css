@@ -50,6 +50,12 @@ figcaption ul li .active {
   color: #0065fc;
 }
 
+main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*****************************************/
 /***************** HEADER ****************/
 /*****************************************/
@@ -58,6 +64,9 @@ header {
   /*margin-top: 15px;*/
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header img {
@@ -421,9 +430,13 @@ footer ul li {
     flex-basis: 50%;
   }
 
-  #activity .articleTop img,
-  #activity .articleBottom img {
+  #activity .articleTop img {
     min-height: 100%;
+  }
+
+  #activity .articleBottom img {
+    height: 94px;
+    vertical-align: bottom;
   }
 
   #activity .articleBottom {
@@ -443,7 +456,7 @@ footer ul li {
     justify-content: center;
   }
 
-  footer div {
+  footer div div {
     width: 100%;
     text-align: center;
   }
@@ -451,10 +464,15 @@ footer ul li {
   /*********** screen > 768px < 992px **********/
 
   @media screen and (min-width: 768px) {
-    footer div {
-      flex-basis: 32%;
+    footer div div {
+      flex-basis: 33%;
       padding-right: 25px;
       text-align: left;
+    }
+
+    #activity .articleBottom img {
+      height: 143px;
+      vertical-align: bottom;
     }
 
     .col-1,
@@ -498,6 +516,11 @@ footer ul li {
 
     #accommodation article {
       flex-basis: 30%;
+    }
+
+    #activity .articleBottom img {
+      height: 179px;
+      vertical-align: bottom;
     }
 
     .col-1,
@@ -594,7 +617,7 @@ footer ul li {
     }
 
     #popular {
-      flex-basis: 35%;
+      flex-basis: 32%;
       border-radius: 16px;
       order: 1;      
     }
@@ -604,7 +627,7 @@ footer ul li {
     }
 
     #accommodation {
-      flex-basis: 60%;
+      flex-basis: 63%;
       border-radius: 16px;
       background-color: #f2f2f2;
       justify-content: space-between;      
@@ -617,10 +640,15 @@ footer ul li {
       width: 100%;
       margin-top: 0;
     }
+
+    #activity .articleBottom img {
+      height: 91px;
+      vertical-align: bottom;
+    }
     
     #activity .col-1,#activity .col-2,#activity .col-3,#activity .col-4 {
       flex-basis: 23%; 
-      height: 600px;     
+      height: 450px;     
     }   
 
   }
