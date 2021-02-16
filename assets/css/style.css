@@ -358,8 +358,8 @@ footer {
   background-color: #f2f2f2;
 }
 
-footer div {
-  flex-basis: 100%;
+footer div { 
+  max-width: 100%; 
 }
 
 footer h4 {
