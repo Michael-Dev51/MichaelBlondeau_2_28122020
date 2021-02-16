@@ -25,6 +25,7 @@ a {
 h2 {
   font-size: 1.25rem;
   font-weight: bold;
+  height: 20px;
   margin-bottom: 25px;
 }
 
@@ -49,14 +50,23 @@ figcaption ul li .active {
   color: #0065fc;
 }
 
+main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*****************************************/
 /***************** HEADER ****************/
 /*****************************************/
 
 header {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header img {
@@ -143,7 +153,10 @@ header nav ul li:hover a {
 #searchBar button {
   background-color: #0065fc;
   border: none;
-  border-radius: 16px;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 0 16px 16px 0;
   padding: 16px;
   margin-left: -10px;
 }
@@ -265,14 +278,16 @@ header nav ul li:hover a {
 
 #accommodation article {
   border-radius: 16px;
+  background-color: #ffffff;
   box-shadow: 1px 1px 6px 2px #f2f2f2;
-  margin-bottom: 1.25rem;
-  padding: 0.3rem;
+  margin-bottom: 10px;
+  padding: 4px;  
 }
 
 #accommodation img {
   flex-basis: auto;
   height: 128px;
+  max-width: 100%;
   border-radius: 16px 16px 0 0;
   object-fit: cover;
 }
@@ -298,6 +313,7 @@ section .bold {
 #activity {
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 #activity article {
@@ -365,8 +381,7 @@ footer ul li {
   }
 
   #accommodation {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;    
     /*width: 100%;*/
     justify-content: space-around;
   }
@@ -406,22 +421,26 @@ footer ul li {
 
   #activity .col-1 article figure div,
   #activity .col-3 article figure div,
-  #activity .articleTop figure div,
-  #activity .articleBottom figure div {
+  #activity .articleBig figure div,
+  #activity .articleSmall figure div {
     flex-basis: 100%;
   }
 
-  #activity .articleTop {
+  #activity .articleBig {
     /*height: 50%;*/
     flex-basis: 50%;
   }
 
-  #activity .articleTop img,
-  #activity .articleBottom img {
+  #activity .articleBig img {
     min-height: 100%;
   }
 
-  #activity .articleBottom {
+  #activity .articleSmall img {
+    height: 94px;
+    vertical-align: bottom;
+  }
+
+  #activity .articleSmall {
     flex-basis: 35%;
   }
 
@@ -438,18 +457,23 @@ footer ul li {
     justify-content: center;
   }
 
-  footer div {
+  footer div div {
     width: 100%;
     text-align: center;
   }
 
-  /*********** screen > 768px < 992px **********/
+  /*********** screen sup 768px inf 992px **********/
 
   @media screen and (min-width: 768px) {
-    footer div {
-      flex-basis: 32%;
+    footer div div {
+      flex-basis: 33%;
       padding-right: 25px;
       text-align: left;
+    }
+
+    #activity .articleSmall img {
+      height: 143px;
+      vertical-align: bottom;
     }
 
     .col-1,
@@ -460,7 +484,7 @@ footer ul li {
     }
   }
 
-  /*********** screen > 992px < 1200px **********/
+  /*********** screen sup 992px  inf 1200px **********/
 
   @media screen and (min-width: 992px) {
     #searchBar form label {
@@ -495,6 +519,11 @@ footer ul li {
       flex-basis: 30%;
     }
 
+    #activity .articleSmall img {
+      height: 179px;
+      vertical-align: bottom;
+    }
+
     .col-1,
     .col-2,
     .col-3,
@@ -502,4 +531,153 @@ footer ul li {
       height: 700px;
     }
   }
-}
+
+ /*********** screen sup 1200px **********/
+
+  @media screen and (min-width: 1200px) {
+
+    header {
+      align-items:initial;
+    }
+    
+    header img {
+      margin-right: auto;
+      margin-top: 10px;
+    }
+
+    header nav {
+      flex-basis: 20%; 
+      margin-top: 0;         
+    }
+
+    header nav ul {
+      margin-top: auto;      
+    }
+
+    header nav ul li {
+      border-bottom: none;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    header nav ul li:hover {
+      border-bottom:none;
+      border-top: 3px solid #0065FC;
+      padding-top: 27px;
+      display: inline;
+    }
+
+    header nav ul li a {
+     display: inline;          
+    }
+
+    header nav ul li :hover a {      
+      padding-top: 28px;
+  }
+
+    header > a {
+      order: 1; 
+      flex-basis: 10%;
+      text-align: center;
+      padding-top: 30px;               
+    }
+
+    header > a:hover {
+      font-size: 1rem;
+      border-top: 3px solid #0065FC;
+      padding-top: 27px; 
+        
+    }
+
+    #searchBar span {
+      display: initial;
+      color: #ffffff;
+    }
+
+    #searchBar button i {
+      display: none;
+    }
+
+    #filters {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    #filters h2 {
+      flex-basis: 5%;
+    }
+
+    #filters p {
+      flex-basis: 100%;
+    }
+
+    section , aside {
+      padding-bottom: 20px;
+    }
+
+    .desktop {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+
+    #popular {
+      flex-basis: 30%;
+      border-radius: 16px;
+      order: 1;      
+    }
+
+    #popular article {
+      width: 100%;
+    }
+
+    #accommodation {
+      flex-basis: 65%;
+      border-radius: 16px;
+      background-color: #f2f2f2;
+      justify-content: space-between;      
+    }
+
+    #accommodation > h2 {
+      margin-bottom: 0;
+    }
+
+    #accommodation article {
+      width: 100%;
+      margin-top: 0;
+      flex-basis: 32%;
+      height: 210px;      
+    }
+
+    #activity {
+      justify-content: space-between;
+    }
+
+    #activity .articleSmall img {
+      height: 91px;
+      vertical-align: bottom;
+    }
+    
+    #activity .col-1,#activity .col-2,#activity .col-3,#activity .col-4 {
+      flex-basis: 23%; 
+      height: 450px;     
+    }
+    
+    #activity .col-4 .articleSmall {
+      flex-basis: 40%;
+    }
+
+    #activity .col-4 .articleSmall img {
+      height: 114px;
+    }
+
+    #activity .col-4 .articleBig {
+      flex-basis: 45%;
+    }
+
+    footer div {
+      max-width: 1208px;
+      margin: auto;
+    }
+  }
+} 
