@@ -358,8 +358,8 @@ footer {
   background-color: #f2f2f2;
 }
 
-footer div { 
-  max-width: 100%; 
+footer div {
+  flex-basis: 100%;
 }
 
 footer h4 {
@@ -673,6 +673,11 @@ footer ul li {
 
     #activity .col-4 .articleBig {
       flex-basis: 45%;
+    }
+
+    footer div {
+      max-width: 1208px;
+      margin: auto;
     }
   }
 } 
