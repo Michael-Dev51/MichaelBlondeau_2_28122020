@@ -535,6 +535,10 @@ footer ul li {
  /*********** screen sup 1200px **********/
 
   @media screen and (min-width: 1200px) {
+
+    header {
+      align-items:initial;
+    }
     
     header img {
       margin-right: auto;
