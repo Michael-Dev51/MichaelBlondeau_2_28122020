@@ -142,12 +142,13 @@ header nav ul li:hover a {
   font-size: 1rem;
 }
 
-#searchBar input:focus {
+#searchBar form input:focus {
   outline: none;
 }
 
-::placeholder {
+#searchBar input::placeholder {
   color: black;
+  opacity: 1;
 }
 
 #searchBar button {
